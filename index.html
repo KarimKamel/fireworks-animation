@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      position: relative;
+      background-image: linear-gradient(black, rgb(8, 8, 70));
+      height: 100vh;
+      overflow: hidden;
+    }
+    @keyframes fireworks {
+      0% {
+        transform: translateY(100vh);
+      }
+      50% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+      }
+      75% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+      }
+      100% {
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+      }
+    }
+    .fireworks,
+    .fireworks2,
+    .fireworks3,
+    .fireworks4,
+    .fireworks5 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      background-image: radial-gradient(yellow, black),
+        radial-gradient(red, black), radial-gradient(rgb(255, 0, 149), black),
+        radial-gradient(rgb(153, 0, 255), black),
+        radial-gradient(rgb(255, 0, 149), black),
+        radial-gradient(rgb(255, 0, 170), black),
+        radial-gradient(rgb(0, 255, 170), black),
+        radial-gradient(rgb(153, 0, 255), black),
+        radial-gradient(rgb(255, 0, 149), black),
+        radial-gradient(rgb(0, 174, 255), black),
+        radial-gradient(rgb(0, 255, 170), black),
+        radial-gradient(rgb(153, 0, 255), black),
+        radial-gradient(rgb(0, 255, 170), black),
+        radial-gradient(rgb(153, 0, 255), black),
+        radial-gradient(rgb(255, 0, 149), black),
+        radial-gradient(rgb(200, 255, 0), black),
+        radial-gradient(rgb(0, 255, 170), black),
+        radial-gradient(rgb(0, 140, 255), black),
+        radial-gradient(rgb(255, 217, 0), black),
+        radial-gradient(rgb(0, 140, 255), black), radial-gradient(red, black),
+        radial-gradient(rgb(166, 255, 0), black),
+        radial-gradient(rgb(166, 255, 0), black),
+        radial-gradient(rgb(255, 0, 149), black);
+      background-position: 95% 30%, 50% 0%, 100% 10%, 20% 10%, 50% 50%, 30% 30%,
+        0% 50%, 80% 25%, 50% 30%, 80% 50%, 100% 60%, 80% 80%, 20% 85%, 0 25%,
+        55% 65%, 85% 0, 50% 100%, 70% 90%, 10% 70%, 70% 70%, 30% 70%, 20% 40%,
+        40% 90%, 90% 90%;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%);
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      animation: fireworks 3s infinite;
+    }
+    .fireworks2 {
+      top: 50%;
+      left: 30%;
+      animation-delay: 0.5s;
+    }
+    .fireworks3 {
+      top: 20%;
+      left: 70%;
+      animation-delay: 0.75s;
+    }
+    .fireworks4 {
+      top: 70%;
+      left: 20%;
+      animation-delay: 1.75s;
+    }
+    .fireworks5 {
+      top: 40%;
+      left: 10%;
+      animation-delay: 1.25s;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="fireworks"></div>
+      <div class="fireworks2"></div>
+      <div class="fireworks3"></div>
+      <div class="fireworks4"></div>
+      <div class="fireworks5"></div>
+    </div>
+  </body>
+</html>
